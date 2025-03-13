@@ -1,0 +1,404 @@
+/* ESTILOS RESPONSIVE */
+@keyframes rebote {
+    from {
+        bottom: 40px;
+    }
+
+    to {
+        bottom: 30px;
+    }
+    
+}
+
+@keyframes grosor {
+    from {
+        font-weight: 100;
+    }
+
+    to {
+        font-weight: 700;
+    }
+}
+
+
+
+
+
+/* MEDIA QUERIES 768 */
+@media only screen and (max-width: 768px) {
+    /* INDEX.HTML */
+    .hero-home {
+        height: 50vh;
+        background-position: center right;
+
+        h1{
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+    }
+
+    
+    .button-go-bottom a {
+        animation: rebote 1s normal infinite;
+    }
+
+    .project {
+        flex-direction: column;
+        margin-bottom: 100px;
+        opacity: 100%;
+    }
+
+    .project:hover {
+        transform: none;
+    }
+
+    .project-content {
+        width: 100%;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        margin-left: 40px;
+        margin-right: 40px;
+}
+
+    .project-content {
+        width: 100%;
+    }
+
+    .project:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+
+
+
+    /* CONTACT.HTML */
+    .contact .image-info {
+        overflow: hidden;
+        height: 400px;
+    }
+
+    .contact .image-info img {
+        max-width: fit-content;
+        /* No se como poner que se vea el max de alta la img */
+    }
+
+    .contactame-form {
+    align-items: flex-end
+    }
+
+    .text-form{
+        width: 30%;
+    }
+    
+
+    /* PROJECT.HTML */
+    .hero-project {
+        flex-direction: column;
+        gap: 40px;
+        align-items: flex-start;
+        margin-bottom: 100px;
+    }
+
+    .info-project {
+        gap: 100px;
+        margin-bottom: 100px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .detail-project {
+        flex-direction: column;
+        gap: 60px;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-bottom: 100px;
+    }
+
+    .detail-project:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+
+
+    /* ABOUT.HTML */
+    .bio-about {
+        margin-bottom: 100px;
+    }
+
+    .detail-about {
+        margin-bottom: 100px;
+    }
+
+    .foto-maria {
+        display: none;
+    }
+
+    /* De qué manera podría centrar la foto para que se vea mi imagen? */
+}
+
+
+
+
+
+/* MEDIA QUERIES 640 */
+@media only screen and (max-width: 640px) {
+    /* INDEX.HTML */
+   .main-header {
+    align-items: flex-start;
+    padding: 10px 20px;
+   }
+
+    .main-nav ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+    }
+   
+    .hero-home {
+        height: 60vh;
+    }
+
+    .button-go-bottom a {
+        font-size: 2rem;
+        position:relative;
+    }
+
+    /* No sé como poner la flecha al final del hero */
+
+    .project {
+        flex-direction: column;
+        margin-bottom: 100px;
+        opacity: 100%;
+    }
+
+    .wrapper {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 0;
+
+        h2{
+            font-size: 2.2rem;
+        }
+    } 
+
+    /* CONTACT.HTML */
+    .info-image {
+        flex-direction: column-reverse;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 60px;
+        gap:60px;
+    }
+
+    .image-info {
+        width: 100%;
+        height: auto;
+        overflow: 0;
+    }
+
+    .contactame-form {
+        align-items:flex-start;
+        padding: 20px;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .text-form{
+        width: 100%;
+    }
+
+
+     /* PROJECT.HTML */
+     .hero-project {
+        gap: 20px;
+        margin-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .info-project {
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .detail-project {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 60px;
+
+        img {
+            box-shadow: var(--gray) 10px 10px 2px;
+        }
+    }
+
+     
+    /* ABOUT.HTML */
+    .bio-about {
+        margin-bottom: 100px;
+    }
+
+    .detail-about {
+        margin-bottom: 100px;
+    }
+
+    .hero-about{
+        height: 60vh;
+        background-image: none;
+        background-position: right;
+        margin-top: -140px;
+        margin-bottom: 0;
+
+        h1{
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        .button-go-bottom {
+            display: block;
+            position: flex-end;
+        }
+        
+    }
+    
+    .wrapper-about {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 100px;
+    }
+
+    .bio-about {
+        width: 100%;
+        font-size: 1.2rem;
+        margin-bottom: 40px;
+    }
+
+    .foto-maria {
+        display: block;
+        margin-bottom: 100px;
+    }
+
+    .detail-about {
+        flex-direction: column;
+        gap: 40px;
+        line-height: 1.8;
+        margin-bottom: 100px;
+    }
+
+    .curriculum-info {
+        font-size: 1.2rem;
+        margin-bottom: 60px;
+    }
+
+    .curriculum-detail {
+        width: 100%;
+        justify-content: right;
+        margin-left: auto;
+    }
+
+    .detail-about:nth-child(even) {
+        justify-items: right;
+    }
+
+
+
+
+    /* PROYECTOS.HTML */
+
+    .hero-proyectos{
+        height: 60vh;
+        background-image: none;
+        background-position: right;
+        margin-top: -140px;
+        margin-bottom: 0;
+
+        h1{
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+        
+    }
+
+    .proyectos {
+        h2 {
+            font-size: 2rem;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 60px;
+            justify-content: center;
+        }
+        
+            p{
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+        
+            li {
+                margin-left: 50px;
+                margin-right: 20px;
+            }
+    }
+    
+    .container-carrousel {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 160px;
+    }
+
+    .swiper-slide {
+        height: 450px;
+    }
+
+    .card-description {
+        padding: 20px;
+        padding-bottom: 20px;
+        
+        p {
+            margin-bottom: 60px;
+        }
+    }
+    .swiper-button-next{
+        margin-right: 10rem;
+        margin-top: 35rem;
+        color:#18715c
+    }
+    
+    .swiper-button-prev {
+        margin-left: 10rem;
+        margin-top: 35rem;
+        color:#18715c
+    }
+
+    /* Grafica */
+    #myChart {
+        margin-left: 20px;
+        margin-right: 20px;
+        scale: 90%
+    }
+
+    .section-chart {
+        background-color: var(--gray);
+        padding-bottom: 160px;
+    }
+}
